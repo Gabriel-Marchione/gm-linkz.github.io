@@ -2,32 +2,57 @@
 <html>
     <head>
         <title>GM - Links</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./index.css">
     </head>
     <body>
-        <header>
-            <img id="propic" src="./images/propic.jpg" alt="propic">
-            <p id="username">@gabriel.marchione</p>
-        </header>
-        <div class="link">
-            <ul>
-                <li>
-                    <img src="./images/bx-home.png">
-                    Sito personale
-                </li>
-                <li>
-                    <img src="./images/bxl-github.png">
-                    Github
-                </li>
-                <li>
-                    <img src="./images/bxl-linkedin.png">
-                    Linkedin
-                </li>
-                <li>
-                    <img src="./images/bxl-twitter.png">
-                    Twitter
-                </li>
-            </ul>
+        <div id="backgroundAnimato">
+            <header>
+                <img id="propic" src="./images/propic.jpg" alt="propic">
+                <a href="https://instagram.com/gabriel.marchione" id="username">@gabriel.marchione</a>
+            </header>
+            <div class="link">
+                <ul>
+                    <li>
+                        <img src="./images/bx-home.png">
+                        <a href="https://gabrielmarchione.altervista.org/">Sito personale</a>
+                    </li>
+                    <li>
+                        <img src="./images/bxl-github.png">
+                        <a href="https://github.com/Gabriel-Marchione">Github</a>
+                    </li>
+                    <li>
+                        <img src="./images/bxl-linkedin.png">
+                        <a href="https://www.linkedin.com/in/gabriel-marchione-a153991b2">Linkedin</a>
+                    </li>
+                    <li>
+                        <img src="./images/bxl-twitter.png">
+                        <a href="https://twitter.com/gabrielmarch_02">Twitter</a>
+                    </li>
+                </ul>
+            </div>
+            <footer>
+                <p>Made by <a href="https://www.linkedin.com/in/gabriel-marchione-a153991b2">@gabrielmarchione</a> in 2023</p>
+            </footer>
         </div>
+        <!-- per includere lo sfondo animato di Vanta.js-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.cells.min.js"></script>
+        <script>
+        VANTA.CELLS({
+        el: "#backgroundAnimato",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        scale: 1.00,
+        color1: 0x11eded,
+        color2: 0x2a8474,
+        size: 2.50,
+        speed: 1.70
+        })
+        </script>
+
     </body>
 </html>
